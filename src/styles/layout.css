@@ -1,0 +1,12 @@
+/* Makes the app feel spacious */
+.app-container {
+  min-height: 100vh;
+  background-color: #f7f8fb;
+}
+
+/* prevents content touching navbar */
+.page-content {
+  padding: 30px;
+  max-width: 1300px;
+  margin: auto;
+}
