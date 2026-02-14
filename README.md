@@ -1,18 +1,53 @@
-# React + Vite
+# 🛒 ReactMart
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+ReactMart is a modern shopping cart application built with React, focused on real-world frontend architecture and user interaction.
 
-Currently, two official plugins are available:
+It demonstrates routing, global state management, API integration, and dynamic cart behavior similar to real ecommerce apps.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) (or [oxc](https://oxc.rs) when used in [rolldown-vite](https://vite.dev/guide/rolldown)) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## React Compiler
+## 🚀 Live Demo
 
-The React Compiler is enabled on this template. See [this documentation](https://react.dev/learn/react-compiler) for more information.
+🔗 **Live App:** https://reactmart-7qhuqz5uz-bishal-pals-projects-f75cd0b0.vercel.app
+🔗 **GitHub Repo:** https://github.com/BISHAL095/Reactmart
 
-Note: This will impact Vite dev & build performances.
+---
 
-## Expanding the ESLint configuration
+## ✨ Key Features
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- Product data fetched from FakeStore API
+- Global cart state using Context API
+- Quantity selection before adding to cart
+- Increment / decrement cart items
+- Live cart counter in navbar
+- Loading spinner during API fetch
+- Empty cart UI state
+- Responsive product grid layout
+
+---
+
+## 🧠 Core Concepts Implemented
+
+- React Hooks (useState, useEffect, useContext)
+- Context API for global state management
+- Component-driven architecture
+- Conditional rendering (loading & error states)
+- Dynamic UI updates in real time
+
+---
+
+## 🛠 Tech Stack
+
+- React
+- JavaScript (ES6+)
+- React Router DOM
+- Context API
+- CSS
+
+---
+
+## ▶️ Run Locally
+
+```bash
+npm install
+npm run dev
