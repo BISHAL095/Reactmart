@@ -5,7 +5,12 @@ import emptyCart from "../assets/empty.png";
 
 export default function Cart() {
 
-  const { cart, removeFromCart } = useContext(CartContext);
+  const {
+    cart,
+    removeFromCart,
+    increaseQty,
+    decreaseQty
+  } = useContext(CartContext);
 
   const totalPrice = cart
     .reduce((total, item) =>
@@ -15,8 +20,8 @@ export default function Cart() {
 
   if (cart.length === 0) {
     return (
-      <div className="cart-container">
-        <h1>Your Cart is Empty </h1>
+      <div className="empty-cart">
+        <h1>Your Cart is Empty</h1>
         <img src={emptyCart} alt="Empty Box" />
         <p>Add some products from the shop.</p>
       </div>
@@ -40,7 +45,13 @@ export default function Cart() {
           <div className="cart-info">
             <h3>{item.title}</h3>
             <p>${item.price}</p>
-            <p>Qty: {item.quantity}</p>
+            <div className="qty-controls">
+              <button onClick={() => decreaseQty(item.id)}>-</button>
+
+              <span>{item.quantity}</span>
+
+              <button onClick={() => increaseQty(item.id)}>+</button>
+            </div>
           </div>
 
           <button

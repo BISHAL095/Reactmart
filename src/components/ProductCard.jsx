@@ -1,14 +1,31 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 import { CartContext } from "../context/CartContext";
+import "../styles/ProductCard.css";
 
 export default function ProductCard({ product }) {
 
   const { addToCart } = useContext(CartContext);
 
+  const [qty, setQty] = useState(1);
+
+  function handleInput(e) {
+    const value = Number(e.target.value);
+
+    if (value >= 1) {
+      setQty(value);
+    }
+  }
+
+  function handleAdd() {
+    addToCart(product, qty);
+    setQty(1); // reset after add
+  }
+
   return (
     <div className="product-card">
-      <img 
-        src={product.image} 
+
+      <img
+        src={product.image}
         alt={product.title}
         width="120"
       />
@@ -17,9 +34,18 @@ export default function ProductCard({ product }) {
 
       <p>${product.price}</p>
 
-      <button onClick={() => addToCart(product)}>
+      <input
+        type="number"
+        min="1"
+        value={qty}
+        onChange={handleInput}
+        className="qty-input"
+      />
+
+      <button onClick={handleAdd}>
         Add to Cart
       </button>
+
     </div>
   );
 }
