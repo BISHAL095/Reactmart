@@ -16,6 +16,7 @@ export default function Shop() {
         const data = await fetchProducts(20);
         setProducts(data);
       } catch (err) {
+        console.log(err);
         setError("Failed to load products");
       } finally {
         setLoading(false);
