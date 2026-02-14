@@ -1,0 +1,128 @@
+/* Cart wrapper */
+.cart-container {
+  max-width: 900px;
+  width: 100%;
+  margin: 0 auto;
+  padding: 0;
+}
+
+/* Individual cart row */
+.cart-item {
+  display: flex;
+  align-items: center;
+  gap: 18px;
+  padding: 16px 0;
+  border-bottom: 1px solid #eee;
+}
+
+/* Product thumbnail */
+.cart-image {
+  width: 70px;
+  height: 70px;
+  object-fit: contain;
+}
+
+/* Product details */
+.cart-info {
+  flex: 1;
+}
+
+/* Product title */
+.cart-info h3 {
+  font-size: 1.05rem;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 6px;
+}
+
+/* Price and quantity text */
+.cart-info p {
+  margin: 3px 0;
+  color: #444;
+}
+
+/* Remove button */
+.remove-btn {
+  padding: 8px 14px;
+  border: none;
+  background: #111;
+  color: #fff;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.remove-btn:hover {
+  background: #333;
+}
+
+/* Cart total section */
+.cart-total {
+  margin-top: 25px;
+  text-align: right;
+}
+
+/* Empty cart layout */
+.empty-cart {
+  height: 70vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* Empty state heading */
+.empty-cart h1 {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin-bottom: 12px;
+}
+
+/* Empty state description */
+.empty-cart p {
+  font-size: 1.2rem;
+  color: #555;
+}
+
+/* Empty state illustration */
+.empty-cart img {
+  width: 180px;
+  margin: 15px 0;
+  opacity: 0.85;
+}
+
+/* Quantity controls */
+.qty-controls {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  margin-top: 4px;
+}
+
+/* Plus / minus buttons (smaller) */
+.qty-controls button {
+  width: 22px;
+  height: 22px;
+  border: none;
+  background: #111;
+  color: #fff;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 0.9rem;
+  font-weight: 600;
+  line-height: 1;
+  transition: 0.2s;
+}
+
+.qty-controls button:hover {
+  background: #333;
+}
+
+/* Quantity value */
+.qty-controls span {
+  min-width: 18px;
+  text-align: center;
+  font-size: 0.9rem;
+  font-weight: 600;
+}
