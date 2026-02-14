@@ -1,7 +1,7 @@
 import { useEffect, useState } from "react";
 import { fetchProducts } from "../api/products";
 import ProductCard from "../components/ProductCard";
-import "../styles/Shop.css";
+import "../styles/shop.css";
 
 export default function Shop() {
 

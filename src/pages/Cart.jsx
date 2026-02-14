@@ -1,6 +1,6 @@
 import { useContext } from "react";
 import { CartContext } from "../context/CartContext";
-import "../styles/Cart.css";
+import "../styles/cart.css";
 import emptyCart from "../assets/empty.png";
 
 export default function Cart() {
