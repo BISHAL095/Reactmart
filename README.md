@@ -8,7 +8,7 @@ It demonstrates routing, global state management, API integration, and dynamic c
 
 ## 🚀 Live Demo
 
-🔗 **Live App:** https://reactmart-7qhuqz5uz-bishal-pals-projects-f75cd0b0.vercel.app
+🔗 **Live App:** https://reactmart-psi.vercel.app/
 🔗 **GitHub Repo:** https://github.com/BISHAL095/Reactmart
 
 ---
